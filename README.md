@@ -2,7 +2,6 @@
 <p>This is a service under project "DisQus" which handles profile related informations of the users.
 <br>
 <h3>Configurations</h3>
-<br>
 maven version : 3.6.3
 <br>
 java version : 8
