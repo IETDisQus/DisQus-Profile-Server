@@ -7,6 +7,19 @@
   </parent>
   <artifactId>profileserviceweb</artifactId>
   
+  <dependencies>
+	<dependency>
+  		<groupId>com.iet.disqus</groupId>
+ 		<artifactId>model</artifactId>
+ 		<version>${project.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.iet.disqus</groupId>
+ 		<artifactId>servicelayer</artifactId>
+ 		<version>${project.version}</version>
+  	</dependency>
+  </dependencies>
+  
   <build>
 		<plugins>
     		<plugin>

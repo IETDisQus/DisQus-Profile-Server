@@ -6,6 +6,15 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>servicelayer</artifactId>
+  
+  <dependencies>
+	<dependency>
+  		<groupId>com.iet.disqus</groupId>
+ 		<artifactId>model</artifactId>
+ 		<version>${project.version}</version>
+  	</dependency>
+  </dependencies>
+  
   <build>
 		<plugins>
     		<plugin>
