@@ -29,12 +29,12 @@ public class Test {
 		SessionFactory factory = cfg.buildSessionFactory();
 		Session s = factory.openSession();
 		
-		User u = (User)s.get(User.class,"poorbi");
+//		User u = (User)s.get(User.class,"poorbi");
 		
 		
 		ProfileDAO pr = new ProfileDAO();
 		
-		Profile p1 = pr.fetchProfile(u);
+		Profile p1 = pr.fetchProfile("poorbi");
 		System.out.println(p1.toString());
 		
 		s.close();

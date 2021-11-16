@@ -41,12 +41,16 @@ public class ProfileDAO {
 		return success;
 	}
 	
-	public Profile fetchProfile(User u) {
+	public Profile fetchProfile(String user_id) {
 		Profile p = null;
+		User u = null;
 		SessionFactory f = ProfileDAO.getSessionFactory();
 		Session s = f.openSession();
 		try {
+		
+		u = (User)s.get(User.class,user_id);
 		p = (Profile)s.get(Profile.class,u.getProfile().getProfileId());
+		
 		}
 		catch (Exception e) {
 			e.printStackTrace();
